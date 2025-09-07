@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Tech Conference 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+    --primary-color: #1a2a41;
+    --secondary-color: #4CAF50;
+    --background-dark: #0d1e34;
+    --background-light: #15253b;
+    --text-light: #f4f4f4;
+    --card-bg: #ffffff;
+    --font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("https://www.shutterstock.com/image-vector/step-into-future-man-moving-260nw-2523895185.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.card-container {
+    background-image: linear-gradient(to right, #17b9b4, #55151b);
+    background-size: 200% 200%;
+    animation: gradient-animation 15s ease infinite;
+    position: relative;
+    padding: 3px;
+    border-radius: 25px;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 22px;
+    padding: 4rem 3rem;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 550px;
+    color: var(--primary-color);
+    position: relative;
+    z-index: 2;
+}
+
+.card-title {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.card-details {
+    margin-bottom: 2.5rem;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    color: #555;
+    line-height: 1.6;
+}
+
+.card-details p {
+    margin: 0.5rem 0;
+}
+
+.btn-rsvp {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn-rsvp:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <h1 class="card-title">Welcome to Annual<br>Tech Conference 2025</h1>
+            <div class="card-details">
+                <p><strong>Date:</strong> October 26-28, 2025</p>
+                <p><strong>Time:</strong> 9:00 AM - 5:00 PM EST</p>
+                <p><strong>Location:</strong> Silicon Valley Convention Center</p>
+            </div>
+            <a href="#" class="btn-rsvp">RSVP Now</a>
+        </div>
+    </div>
+</body>
+</html>
